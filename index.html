@@ -7,24 +7,26 @@
   <title>Netlifyの練習</title>
 </head>
 <body>
-  <form name="contact" method="post" netlify>
+  <form name="contact" method="post" action="/success.html" netlify>
     <p>
-      <label>Your Name: <input type="text" name="name" /></label>   
+      <label>ニックネーム: <input type="text" name="name" /></label>   
     </p>
     <p>
       <label>Your Email: <input type="email" name="email" /></label>
     </p>
     <p>
-      <label>Your Role: <select name="role[]" multiple>
-        <option value="leader">Leader</option>
-        <option value="follower">Follower</option>
+      <label>あなたはどっち: <select name="role[]" multiple>
+        <option value="cat">猫派</option>
+        <option value="dog">犬派</option>
+        <option value="other">その他・どちらでもない</option>
       </select></label>
     </p>
     <p>
-      <label>Message: <textarea name="message"></textarea></label>
+      <label>コメント: <textarea name="message"></textarea></label>
     </p>
+    <label>自慢のペット写真をどうぞ: <input type="file" name="file" /></label>
     <p>
-      <button type="submit">Send</button>
+      <button type="submit">送信する！</button>
     </p>
   </form>
 </body>
