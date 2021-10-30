@@ -1,0 +1,2 @@
+user-agent: *
+sitemap: https://marumaru.cf/sitemap.xml
